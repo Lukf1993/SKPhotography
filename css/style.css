@@ -75,10 +75,9 @@ html, body {
   html body .swiper-container, body body .swiper-container {
     margin: 50px 50px 0 50px;
     border-top: none; } }
-.header_top--position {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto; }
+.header_top--center {
+  margin: 0 auto;
+  display: block; }
 .header_top--mobile {
   display: none; }
 
@@ -124,10 +123,12 @@ html, body {
 @media (min-width: 750px) {
   .header_top {
     display: flex; }
-    .header_top a {
-      flex-grow: 1; }
-    .header_top--mobile {
-      display: block; }
+    .header_top--position {
+      max-width: 100%; }
+    .header_top--flex {
+      flex: 1; }
+    .header_top--float {
+      float: right; }
 
   .header_nav {
     display: flex !important;
@@ -190,21 +191,14 @@ html, body {
       margin: 40px; }
 
 @media (min-width: 750px) {
-  .przycisk {
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    max-width: 300px;
-    transition: 500ms;  }
-    .przycisk:hover {
-      color:#8bdae9
-    }
   .content {
     border: none; }
+    .content .przycisk {
+      text-decoration: none;
+      color: black;
+      font-size: 30px;
+      text-align: center;
+      display: block; }
     .content_MyPhoto {
       margin: 100px auto;
       max-width: 80%; }
