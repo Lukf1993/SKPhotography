@@ -1,0 +1,123 @@
+.content{
+    font-size: 16px;
+    border-top: solid 1px #8bdae9;
+
+    &_MyPhoto{
+        display: block;        
+        max-width: 100%;
+    }
+    &_text{
+        margin: 70px 20px;
+        text-align: center;
+        line-height: 30px;
+
+    }
+    &_header{
+        font-size: 40px;
+        text-align: center;
+    }
+    &_certyfication{
+        text-align: center;
+        margin: 40px auto;
+        
+        &--photo{
+            height: 200px;
+        }
+    }
+    &_section{display: flex;
+        &--square{
+            width: 33%;
+            padding-bottom: 33%;
+            margin: 10px auto;
+            overflow: hidden;
+            position: relative;
+            img{
+                position: absolute;
+                object-fit: cover;
+                width: auto;
+                max-width: 100%;
+                min-height: 100%;
+            }
+        }
+    }
+    &_contact{
+        text-align: center;
+        font-size: 30px;
+        h2{
+            margin: 80px auto;
+            line-height: 45px;
+        }
+        &--info{text-align: center;
+            margin: 50px 0;
+            p{    margin: 50px;
+                
+            }
+        }
+        &--icon{
+            .icon{
+                font-size: 150px;
+                color: #969696;
+                margin: 40px;
+                
+            }
+        }
+    }
+}
+@media (min-width: 750px) {
+    .content{border: none;
+        .przycisk{
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            text-align: center; 
+            display: block;
+        }
+        &_MyPhoto{
+            margin: 100px auto;        
+            max-width: 80%;
+        }
+        &_text{
+            margin: 100px auto;
+            width: 800px;
+        }
+        &_certyfication{
+            margin: 40px auto;
+            &--photo{
+                margin: 20px;
+                height: 180px;
+            }
+        }
+        &_header{
+            margin: 40px;
+        }
+        &_contact{            
+            &--info{
+                display: flex;
+                p{flex-grow: 1}
+            }
+            &--icon{display: flex;
+                div{
+                    flex-grow: 1;
+                    div{
+                        font-size: 16px;
+                        margin: 0 0 60px 0;
+                    }
+                }
+                .icon{
+                    transition: 200ms;
+                    &:hover{
+                        color: #8bdae9;
+                    }
+                }
+            }
+        }
+        &_section{
+            &--square{
+                
+                img{transition: 500ms;
+                    &:hover{transform: scale(1.1);}
+                }
+            }
+        }
+    }
+}
