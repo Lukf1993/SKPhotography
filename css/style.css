@@ -33,10 +33,11 @@ table {
 
 body {
   font-family: 'Quicksand', sans-serif; }
-  body .img_hover {
-    transition: 500ms; }
-    body .img_hover:hover {
-      transform: scale(1.1); }
+  @media (min-width: 750px) {
+    body .img_hover {
+      transition: 500ms; }
+      body .img_hover:hover {
+        transform: scale(1.1); } }
 
 html, body {
   position: relative;
@@ -205,31 +206,37 @@ html, body {
     .content_text {
       margin: 100px auto;
       width: 800px; }
-    .content_certyfication {
-      margin: 40px auto; }
-      .content_certyfication--photo {
-        margin: 20px;
-        height: 180px; }
-    .content_header {
-      margin: 40px; }
-    .content_contact--info {
-      display: flex; }
-      .content_contact--info p {
-        flex-grow: 1; }
-    .content_contact--icon {
-      display: flex; }
-      .content_contact--icon div {
-        flex-grow: 1; }
-        .content_contact--icon div div {
-          font-size: 16px;
-          margin: 0 0 60px 0; }
-      .content_contact--icon .icon {
-        transition: 200ms; }
-        .content_contact--icon .icon:hover {
-          color: #8bdae9; }
-    .content_section--square img {
-      transition: 500ms; }
-      .content_section--square img:hover {
-        transform: scale(1.1); } }
+
+  .content_certyfication {
+    margin: 0 auto; }
+    .content_certyfication--box {
+      height: 300px;
+      width: 200px;
+      display: inline-block;
+      margin: 20px;
+      overflow: hidden; }
+    .content_certyfication--photo {
+      height: 100%; }
+
+  .content_contact--info {
+    display: flex; }
+    .content_contact--info p {
+      flex-grow: 1; }
+  .content_contact--icon {
+    display: flex; }
+    .content_contact--icon div {
+      flex-grow: 1; }
+      .content_contact--icon div div {
+        font-size: 16px;
+        margin: 0 0 60px 0; }
+    .content_contact--icon .icon {
+      transition: 200ms; }
+      .content_contact--icon .icon:hover {
+        color: #8bdae9; }
+
+  .content_section--square img {
+    transition: 500ms; }
+    .content_section--square img:hover {
+      transform: scale(1.1); } }
 
 /*# sourceMappingURL=style.css.map */
