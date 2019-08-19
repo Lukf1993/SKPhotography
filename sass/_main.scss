@@ -15,7 +15,6 @@
     &_header{
         font-size: 40px;
         text-align: center;
-        margin: 20px 0 60px;
     }
     &_certyfication{
         text-align: center;
@@ -65,7 +64,6 @@
     }
 }
 @media (min-width: 750px) {
-
     .content{border: none;
         .przycisk{
             text-decoration: none;
@@ -82,46 +80,43 @@
             margin: 100px auto;
             width: 800px;
         }
-    }
-    .content_certyfication{
-        margin: 0 auto;
-        &--box{    
-            height: 300px;
-            width: 200px;
-            display: inline-block;
-            margin: 20px;
-            overflow: hidden;
-                }
-        &--photo{
-            height: 100%;
+        &_certyfication{
+            margin: 40px auto;
+            &--photo{
+                margin: 20px;
+                height: 180px;
+            }
         }
-    }
-    .content_contact{            
-        &--info{
-            display: flex;
-            p{flex-grow: 1}
+        &_header{
+            margin: 40px;
         }
-        &--icon{display: flex;
-            div{
-                flex-grow: 1;
+        &_contact{            
+            &--info{
+                display: flex;
+                p{flex-grow: 1}
+            }
+            &--icon{display: flex;
                 div{
-                    font-size: 16px;
-                    margin: 0 0 60px 0;
+                    flex-grow: 1;
+                    div{
+                        font-size: 16px;
+                        margin: 0 0 60px 0;
+                    }
                 }
-            }
-            .icon{
-                transition: 200ms;
-                &:hover{
-                    color: #8bdae9;
+                .icon{
+                    transition: 200ms;
+                    &:hover{
+                        color: #8bdae9;
+                    }
                 }
             }
         }
-    }
-    .content_section{
-        &--square{
-            
-            img{transition: 500ms;
-                &:hover{transform: scale(1.1);}
+        &_section{
+            &--square{
+                
+                img{transition: 500ms;
+                    &:hover{transform: scale(1.1);}
+                }
             }
         }
     }

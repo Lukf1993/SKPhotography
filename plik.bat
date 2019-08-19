@@ -1,2 +1,1 @@
-cd C:\Users\Łukasz\Desktop\repo\SKPhotography
-sass --watch sass/style.scss:css/style.css
+node-sass -w sass/ -o ./css -r --source-map true --output-style compressed
